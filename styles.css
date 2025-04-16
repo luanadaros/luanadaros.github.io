@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #666;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c2185b;
+}
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+.gif-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gif-box {
+    display: flex;
+    align-items: center; 
+}
+
+.gif {
+    width: 185px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .gif-grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .gif {
+      width: 200px;
+    }
+  }
+
+span {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+}
+
+p {
+    color : #fff;
+}
+
+.btn-no{
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-no:hover {
+    background-color: #c2185b;
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+  }
+  
+  .emoji {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity 0.2s ease;
+  }
+  

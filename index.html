@@ -1,1 +1,32 @@
-Hello world
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>just for fun</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <p style="font-size: 70px">&#128104;&#127995; + &#128105;&#127995; + 2 x&#128118; + &#128049;?</p>
+    <a href="page-yes.html"><button class="btn">Sim</button></a>
+    <a href="page-no.html"><button class="btn-no" id="btn-no">Não</button></a>
+    <div id="emoji" class="emoji">😠</div>
+  </div>
+  <script>
+    const botaoNao = document.getElementById("btn-no");
+    const emojiBravo = document.getElementById("emoji");
+
+    botaoNao.addEventListener("mouseenter", () => {
+        emojiBravo.style.opacity = "1";
+        emojiBravo.style.animation = "piscar 0.5s infinite";
+    });
+
+    botaoNao.addEventListener("mouseleave", () => {
+        emojiBravo.style.opacity = "0";
+        emojiBravo.style.animation = "none";
+    });
+  </script>
+</body>
+</html>
